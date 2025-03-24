@@ -6,13 +6,8 @@
 
 @import url('./settings/general.scss');
 @import url('./settings/reset.scss');
-@import url('./index/embeded.scss');
 @import url('./index/elements.scss');
 @import url('./index/cluster.scss');
-
-/* General */
-@import url('./sections/general/modal.scss');
-@import url('./sections/general/banner.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
@@ -22,6 +17,14 @@
 
 /* Home */
 @import url('./sections/home/hero.scss');
+@import url('./sections/home/banner.scss');
+@import url('./sections/home/options.scss');
+@import url('./sections/home/purchase.scss');
+@import url('./sections/home/qualities.scss');
+@import url('./sections/home/morething.scss');
+@import url('./sections/home/secure.scss');
+@import url('./sections/home/create.scss');
+@import url('./sections/home/answers.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
