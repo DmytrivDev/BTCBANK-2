@@ -41,9 +41,9 @@
 }
 
 @media screen and (max-width: 960px) {
-  .header__main {
-  }
   .header__body {
+    min-height: 5.75rem;
+    padding: 1.5rem 0;
     .custom-logo-link {
       span {
         &:nth-child(1) {
