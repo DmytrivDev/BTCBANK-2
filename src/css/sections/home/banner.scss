@@ -98,6 +98,13 @@
 }
 
 @media screen and (max-width: 960px) {
+  .banner {
+    margin-top: 1.8125rem;
+    &::after,
+    &::before {
+      width: 6rem;
+    }
+  }
   .banner__carousell {
     &:hover {
       .banner__list {
@@ -108,5 +115,10 @@
   }
   .banner__list {
     gap: 1rem;
+  }
+
+  .banner__box {
+    max-height: 4rem;
+    max-width: 6.2728rem;
   }
 }
