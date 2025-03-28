@@ -27,7 +27,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 1.5rem;
-      .tl4 {
+      .tl5 {
         transition: all 0.15s ease-in;
       }
       &::after {
@@ -60,7 +60,7 @@
         opacity: 1;
       }
       [class*="__head"] {
-        .tl4 {
+        .tl5 {
           color: var(--cc);
         }
         &::after {
@@ -79,6 +79,7 @@
     display: flex !important;
   }
   .splide__pagination {
+    margin-top: 1rem;
     position: static;
     padding: 0;
     bottom: 0;
@@ -89,14 +90,14 @@
   }
   .splide__pagination__page {
     border-radius: 50%;
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 0.5rem;
+    height: 0.5rem;
     margin: 0;
-    background-color: var(--cw);
+    background-color: var(--cd2);
     transition: all 0.15s ease-in;
     &.is-active {
       transform: none;
-      opacity: 0.3;
+      opacity: 0.24;
     }
   }
 }

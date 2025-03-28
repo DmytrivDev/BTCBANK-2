@@ -47,7 +47,7 @@ export const initSlider = (container, options = {}) => {
 
     progressIndicator.forEach(({ current, total }, index) => {
       if (current) {
-        current.textContent = String(index + 1).padStart(2, '0');
+        current.textContent = `${String(index + 1).padStart(2, '0')}.`;
       }
 
       if (total) {
