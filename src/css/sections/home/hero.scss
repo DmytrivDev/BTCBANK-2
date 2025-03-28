@@ -1,8 +1,22 @@
+.hero {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 7;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 17.625rem;
+    background: linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, #0d0d0d 89.72%);
+  }
+}
 .hero__body {
   position: relative;
   z-index: 10;
   padding-top: 9.25rem;
   padding-bottom: 11rem;
+  min-height: 41.1875rem;
 }
 .hero_content {
   position: relative;
@@ -18,7 +32,7 @@
 
 .hero__desc {
   position: absolute;
-  z-index: 1;
+  z-index: 8;
   top: 2.1875rem;
   right: -11.6662rem;
   width: 49.6662rem;
@@ -28,7 +42,7 @@
 }
 .hero__tel {
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   top: 17.625rem;
   right: 24.6563rem;
   width: 14.2975rem;
@@ -38,10 +52,59 @@
   }
 }
 
+.hero__filter1 {
+  position: absolute;
+  z-index: 1;
+  top: 4rem;
+  right: -2.5625rem;
+  width: 21.1875rem;
+  height: 21.1875rem;
+  transform: rotate(-90deg);
+  border-radius: 21.1875rem;
+  opacity: 0.32;
+  background: linear-gradient(230deg, #11084f 0.06%, #882076 101.15%);
+  filter: blur(8rem);
+}
+.hero__filter2 {
+  position: absolute;
+  z-index: 1;
+  top: -0.8125rem;
+  left: -6.25rem;
+  width: 38.1875rem;
+  height: 38.1875rem;
+  transform: rotate(90deg);
+  border-radius: 38.1875rem;
+  opacity: 0.16;
+  background: linear-gradient(230deg, #11084f 0.06%, #882076 101.15%);
+  filter: blur(4rem);
+}
+
+.hero__bg {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  & > div {
+    position: absolute;
+    bottom: -18.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 168.3125rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 960px) {
   .hero__body {
     padding-top: 2.75rem;
     padding-bottom: 6rem;
+    min-height: 24.6875rem;
   }
   .hero_content {
     width: 50%;
@@ -65,11 +128,24 @@
     right: 13.675rem;
     width: 8.6806rem;
   }
+
+  .hero__filter1,
+  .hero__filter2 {
+    display: none;
+  }
+
+  .hero__bg {
+    & > div {
+      bottom: -12.25rem;
+      width: 130.8125rem;
+    }
+  }
 }
 
 @media screen and (max-width: 735px) {
   .hero__body {
     padding-bottom: 27.25rem;
+    min-height: auto;
   }
   .hero_content {
     width: 100%;
@@ -90,5 +166,13 @@
   .hero__tel {
     top: auto;
     bottom: 6.8rem;
+  }
+
+  .hero__bg {
+    & > div {
+      bottom: 0;
+      width: 99.5625rem;
+      transform: translateX(-35%);
+    }
   }
 }
