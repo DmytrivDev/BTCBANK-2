@@ -1,0 +1,175 @@
+.morething__wrapp {
+  position: relative;
+}
+.morething__body {
+  position: relative;
+  border-radius: 1.5rem;
+  padding: 5rem 4rem;
+  background-color: var(--cb3);
+  overflow: hidden;
+  min-height: 21.5rem;
+}
+.morething__content {
+  position: relative;
+  z-index: 10;
+  max-width: 36.25rem;
+  .tlnote {
+    color: var(--ce);
+    margin-bottom: 1rem;
+  }
+  .tl3 {
+    margin-bottom: 1.5rem;
+  }
+}
+.morething__items {
+  li {
+    position: absolute;
+    z-index: 9;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    border-radius: 1.5rem 0.25rem 1.5rem 1.5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 0.16) 0%,
+      rgba(246, 246, 246, 0.04) 100%
+    );
+    span {
+      flex-shrink: 0;
+      width: 1.5rem;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.33;
+    }
+    &:nth-child(1) {
+      top: 6.0625rem;
+      right: 22.3125rem;
+    }
+    &:nth-child(2) {
+      top: 13.625rem;
+      right: 3rem;
+      border-radius: 0.25rem 1.5rem 1.5rem 1.5rem;
+    }
+    &:nth-child(3) {
+      top: 12.3125rem;
+      right: 27.3125rem;
+    }
+  }
+}
+
+.morething__tl {
+  position: absolute;
+  z-index: 7;
+  top: -1.0625rem;
+  right: 10.1625rem;
+  width: 12.8775rem;
+  transform: rotate(15deg);
+  img {
+    width: 100%;
+  }
+}
+.morething__tg {
+  position: absolute;
+  z-index: 8;
+  top: -2.875rem;
+  right: 1.6875rem;
+  width: 12.3125rem;
+  transform: rotate(-10.528deg);
+  img {
+    width: 100%;
+  }
+}
+.morething__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .el-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .morething__body {
+    border-radius: 1rem;
+    padding: 3rem 1rem 11.25rem 1rem;
+    min-height: auto;
+  }
+  .morething__content {
+    max-width: 50%;
+    .tlnote {
+      margin-bottom: 0.5rem;
+    }
+    .tl3 {
+      margin-bottom: 1rem;
+    }
+  }
+  .morething__items {
+    li {
+      padding: 0.5rem 1rem;
+      border-radius: 0.75rem 0.75rem 0 0.75rem;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      &:nth-child(1) {
+        top: auto;
+        bottom: 16.0625rem;
+        right: 8.3125rem;
+      }
+      &:nth-child(2) {
+        top: auto;
+        bottom: 11.5625rem;
+        right: 9.4375rem;
+        border-radius: 0.75rem 0.75rem 0 0.75rem;
+      }
+      &:nth-child(3) {
+        top: auto;
+        bottom: 7.0625rem;
+        right: 9.9375rem;
+        border-radius: 0.75rem 0 0.75rem 0.75rem;
+      }
+    }
+  }
+
+  .morething__tl {
+    top: auto;
+    bottom: -0.7188rem;
+    right: -0.965rem;
+    width: 10.7644rem;
+    transform: rotate(7deg);
+  }
+  .morething__tg {
+    top: auto;
+    bottom: -2.5981rem;
+    right: -0.9875rem;
+    width: 5.9387rem;
+  }
+  .morething__bg {
+    .el-desc {
+      display: none;
+    }
+    .el-mob {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .morething__body {
+    padding: 3rem 1rem 21.5rem 1rem;
+  }
+  .morething__content {
+    max-width: 100%;
+  }
+}
