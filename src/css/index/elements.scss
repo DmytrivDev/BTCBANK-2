@@ -92,8 +92,13 @@
 .brgrad {
   background:
     linear-gradient(var(--cb), var(--cb)) padding-box,
-    linear-gradient(0, var(--ct) 0%, var(--cb2) 100%) border-box !important;
+    linear-gradient(180deg, var(--ct) 0%, var(--cb2) 100%) border-box !important;
   border: 0.0625rem solid transparent !important;
+  &.grad-rever {
+    background:
+      linear-gradient(var(--cb), var(--cb)) padding-box,
+      linear-gradient(0, var(--ct) 0%, var(--cb2) 100%) border-box !important;
+  }
 }
 
 @media screen and (max-width: 960px) {
