@@ -18,6 +18,23 @@ if (createSplide) {
   });
 }
 
+const qualitiesSplide = document.querySelector('.qualities');
+if (qualitiesSplide) {
+  initSlider(qualitiesSplide, {
+    gap: '1.5rem',
+    perPage: 3,
+    breakpoints: {
+      960: {
+        gap: '1rem',
+        perPage: 2,
+      },
+      768: {
+        perPage: 1,
+      },
+    },
+  });
+}
+
 // const elemSplides = document.querySelectorAll('.elem');
 // elemSplides?.forEach(container => {
 //   initSlider(container, {
