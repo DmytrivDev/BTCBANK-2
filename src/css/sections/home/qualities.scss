@@ -5,6 +5,12 @@
   .splide__track {
     overflow: visible;
   }
+  .splide__list {
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
   .splide__slide {
     max-width: 23.625rem;
   }

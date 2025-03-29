@@ -12,7 +12,7 @@
 .morething__content {
   position: relative;
   z-index: 10;
-  max-width: 36.25rem;
+  width: 36.25rem;
   .tlnote {
     color: var(--ce);
     margin-bottom: 1rem;
@@ -105,7 +105,7 @@
     min-height: auto;
   }
   .morething__content {
-    max-width: 50%;
+    width: 50%;
     .tlnote {
       margin-bottom: 0.5rem;
     }
@@ -170,6 +170,6 @@
     padding: 3rem 1rem 21.5rem 1rem;
   }
   .morething__content {
-    max-width: 100%;
+    width: 100%;
   }
 }

@@ -5,6 +5,10 @@
 .create__body {
   position: relative;
 
+  .splide__list {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
   .btn-def {
     position: absolute;
     top: -2.25rem;
@@ -14,6 +18,8 @@
 }
 
 .card-create {
+  width: 100%;
+  max-width: calc((100% - 2 * 1.5rem) / 3);
   position: relative;
   overflow: hidden;
   padding: 16.6875rem 1.9375rem 1.9375rem 1.9375rem;
@@ -31,6 +37,7 @@
     opacity: 0.16;
     filter: blur(4rem);
   }
+
   .current__slide {
     position: absolute;
     top: 1.9375rem;
@@ -39,9 +46,6 @@
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: -0.02em;
-  }
-  .tl4 {
-    margin-bottom: 0.5rem;
   }
 }
 .card-create__ico {
@@ -58,6 +62,9 @@
 .card-create__box {
   position: relative;
   z-index: 5;
+  .tl4 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -66,6 +73,10 @@
     margin-bottom: 1.5rem;
   }
   .create__body {
+    .splide__list {
+      flex-wrap: nowrap;
+      gap: 0;
+    }
     .btn-def {
       position: sticky;
       top: auto;
@@ -78,12 +89,14 @@
   .card-create {
     padding: 13.6875rem 1.4375rem 1.4375rem 1.4375rem;
     border-radius: 1rem;
+    max-width: 100%;
     &::before {
       top: 5.2775rem;
       width: 5.32rem;
       height: 5.32rem;
       filter: blur(3.04rem);
     }
+
     .current__slide {
       top: 1.4375rem;
       left: 1.4375rem;
@@ -94,10 +107,5 @@
   .card-create__ico {
     top: 5.4375rem;
     width: 5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .class {
   }
 }
