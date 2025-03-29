@@ -7,7 +7,6 @@
 @import url('./settings/general.scss');
 @import url('./settings/reset.scss');
 @import url('./index/elements.scss');
-@import url('./index/cluster.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');

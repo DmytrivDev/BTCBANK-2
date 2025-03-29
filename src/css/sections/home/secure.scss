@@ -1,0 +1,133 @@
+.secure__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secure__content {
+  width: 33.5rem;
+  .tl3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.secure__wrapp {
+  overflow-y: hidden;
+  width: 40.5rem;
+  padding: 0 1.25rem;
+
+  .splide__track {
+    overflow: visible;
+  }
+  .splide__list {
+    display: block !important;
+  }
+  .splide__slide {
+    &.is-active {
+      .card-secure {
+        opacity: 1;
+        transform: scale(1.06);
+      }
+    }
+    &.is-prev {
+      .card-secure {
+        transition: all 0.4s ease-in-out;
+        opacity: 0.32;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.card-secure {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  background-color: var(--cb);
+  opacity: 0.32;
+  transition: all 0.4s 0.5s ease-in-out;
+}
+.card-secure__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 13.75rem;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 9rem;
+    height: 6rem;
+    img {
+      max-height: 100%;
+    }
+  }
+}
+.card-secure__info {
+  flex-grow: 1;
+  padding: 2.0625rem 2.0625rem 2.0625rem 2.9375rem;
+  border: none !important;
+  border-left: 0.0625rem solid transparent !important;
+}
+.card-secure__tl {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.28;
+  margin-bottom: 0.25rem;
+}
+.card-secure__txt {
+  color: var(--ch);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+@media screen and (max-width: 960px) {
+  .secure__body {
+    display: block;
+    align-items: stretch;
+    justify-content: stretch;
+  }
+  .secure__content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .secure__wrapp {
+    width: 100%;
+    padding: 0 1rem;
+
+    .splide__slide {
+      &.is-active {
+        .card-secure {
+          transform: scale(1.035);
+        }
+      }
+    }
+  }
+
+  .card-secure {
+    border-radius: 0.75rem;
+  }
+  .card-secure__img {
+    width: 6.5rem;
+    span {
+      max-width: 4.5rem;
+      height: 3rem;
+    }
+  }
+  .card-secure__info {
+    padding: 1.5rem;
+  }
+  .card-secure__tl {
+    font-size: 1.125rem;
+    line-height: 1.33;
+  }
+  .card-secure__txt {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.33;
+  }
+}

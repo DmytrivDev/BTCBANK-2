@@ -17,16 +17,32 @@ if (qualitiesSplide) {
   });
 }
 
-// const elemSplides = document.querySelectorAll('.elem');
-// elemSplides?.forEach(container => {
-//   initSlider(container, {
-//     perPage: 2,
-//     breakpoints: {
-//       960: {},
-//       500: {},
-//     },
-//   });
-// });
+const secureSplide = document.querySelector('.secure');
+if (secureSplide) {
+  initSlider(secureSplide, {
+    direction: 'ttb', // Вертикальная прокрутка
+    height: '27.5rem', // Высота слайдера
+    gap: '1.5rem',
+    focus: 'center',
+    easing: 'linear',
+    perPage: 3,
+    type: 'loop', // Зацикленный режим
+    autoplay: true, // Автопрокрутка
+    interval: 4000, // Интервал 3 секунды
+    speed: 1000,
+    arrows: false, // Отключаем стрелки
+    pagination: false, // Отключаем пагинацию
+    drag: false, // Отключаем перетаскивание
+    pauseOnHover: false, // Отключаем паузу при наведении
+    pauseOnFocus: false, // Отключаем паузу при фокусе
+    breakpoints: {
+      960: {
+        height: '19.5rem',
+        gap: '1rem',
+      },
+    },
+  });
+}
 
 let createSliderInstance;
 const create = document.querySelector('.create');

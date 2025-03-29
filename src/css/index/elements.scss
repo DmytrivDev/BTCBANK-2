@@ -51,7 +51,8 @@
 
 .txt1,
 .txt2,
-.txt3 {
+.txt3,
+.txt4 {
   color: var(--cd);
   &.tch {
     color: var(--ch);
@@ -63,7 +64,7 @@
   line-height: 1.33;
   letter-spacing: -0.01em;
 }
-.txt3 {
+.txt4 {
   font-size: 0.875rem;
   line-height: 1.42;
 }
@@ -128,7 +129,7 @@
     font-size: 1.125rem;
   }
 
-  .txt2 {
+  .txt3 {
     font-size: 0.875rem;
     line-height: 1.42;
   }
