@@ -30,7 +30,6 @@
     }
     &.is-prev {
       .card-secure {
-        transition: all 0.4s ease-in-out;
         opacity: 0.32;
         transform: scale(1);
       }
@@ -45,7 +44,7 @@
   border-radius: 1.5rem;
   background-color: var(--cb);
   opacity: 0.32;
-  transition: all 0.4s 0.5s ease-in-out;
+  transition: all 1s .4s linear;
 }
 .card-secure__img {
   display: flex;

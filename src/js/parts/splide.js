@@ -28,8 +28,8 @@ if (secureSplide) {
     perPage: 3,
     type: 'loop', // Зацикленный режим
     autoplay: true, // Автопрокрутка
-    interval: 4000, // Интервал 3 секунды
-    speed: 1000,
+    interval: 2000, // Интервал 3 секунды
+    speed: 2000,
     arrows: false, // Отключаем стрелки
     pagination: false, // Отключаем пагинацию
     drag: false, // Отключаем перетаскивание
