@@ -1,11 +1,21 @@
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1100;
 }
 .header__main {
   position: relative;
   z-index: 110;
   background-color: transparent;
+  transition: all 0.15s ease-in;
+  border-bottom: 0.0625rem solid transparent;
+  &.addBg {
+    background-color: var(--cb);
+    border-bottom-color: var(--ct);
+  }
+  &.isOpened {
+    border-bottom-color: transparent;
+  }
 }
 .header__body {
   display: flex;

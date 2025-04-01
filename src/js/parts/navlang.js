@@ -2,8 +2,9 @@ import { toggle, up } from 'slide-element';
 
 function handleMenuItemChildren() {
   function handleMenu(menuElement) {
-    const links = menuElement.querySelectorAll('.menu-item-has-children > a');
-    links.forEach(link => {
+    const langLinks = menuElement.querySelectorAll('.actions__lang > li > a');
+
+    langLinks.forEach(link => {
       if (link.getAttribute('href') === '#') {
         link.addEventListener('click', event => event.preventDefault());
       }
@@ -11,8 +12,8 @@ function handleMenuItemChildren() {
 
     function toggleMenu(event) {
       const target = event.target;
-      const menuItem = target.closest('.menu-item-has-children');
-      const menuLink = target.closest('.menu-item-has-children > a');
+      const menuItem = target.closest('.actions__lang > li');
+      const menuLink = target.closest('.actions__lang > li > a');
 
       if (menuItem && menuLink === target) {
         event.preventDefault();
@@ -21,7 +22,7 @@ function handleMenuItemChildren() {
         menuItem.classList.toggle('isOpened');
 
         const allOpenedItems = menuItem.parentElement.querySelectorAll(
-          '.menu-item-has-children.isOpened'
+          '.actions__lang > li.isOpened'
         );
         allOpenedItems.forEach(item => {
           if (item !== menuItem) {
@@ -42,7 +43,7 @@ function handleMenuItemChildren() {
     activateMenu();
   }
 
-  const mobMenu = document.querySelector('.mobmenu .navmenu');
+  const mobMenu = document.querySelector('.mobmenu .actions');
 
   if (mobMenu) handleMenu(mobMenu);
 }

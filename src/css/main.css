@@ -25,5 +25,8 @@
 @import url('./sections/home/create.scss');
 @import url('./sections/home/answers.scss');
 
+/* Policy */
+@import url('./sections/policy/policy.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
