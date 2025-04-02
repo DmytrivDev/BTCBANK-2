@@ -5,7 +5,6 @@ const accord = document.querySelectorAll('.accord');
 
 accord?.forEach(list => {
   new Accordion(list, {
-    openOnInit: [0],
     duration: 400,
     showMultiple: false,
   });
