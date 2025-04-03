@@ -1,22 +1,5 @@
 import { initSlider } from './splidecust';
 
-const qualitiesSplide = document.querySelector('.qualities');
-if (qualitiesSplide) {
-  initSlider(qualitiesSplide, {
-    gap: '1.5rem',
-    perPage: 3,
-    breakpoints: {
-      960: {
-        gap: '1rem',
-        perPage: 2,
-      },
-      768: {
-        perPage: 1,
-      },
-    },
-  });
-}
-
 const secureSplide = document.querySelector('.secure');
 if (secureSplide) {
   initSlider(secureSplide, {
@@ -44,10 +27,29 @@ if (secureSplide) {
   });
 }
 
+let qualitiesSliderInstance;
+const qualities = document.querySelector('.qualities');
+
+const initQualitiesSlider = () => {
+  if (qualities && !qualitiesSliderInstance) {
+    qualitiesSliderInstance = initSlider(qualities, {
+      breakpoints: {
+        960: {
+          gap: '1rem',
+          perPage: 2,
+        },
+        768: {
+          perPage: 1,
+        },
+      },
+    });
+  }
+};
+
 let createSliderInstance;
 const create = document.querySelector('.create');
 
-const initElemSlider = () => {
+const initCreateSlider = () => {
   if (create && !createSliderInstance) {
     createSliderInstance = initSlider(create, {
       breakpoints: {
@@ -65,6 +67,10 @@ const initElemSlider = () => {
 };
 
 const destroySliders = () => {
+  if (qualitiesSliderInstance) {
+    qualitiesSliderInstance.destroy();
+    qualitiesSliderInstance = null;
+  }
   if (createSliderInstance) {
     createSliderInstance.destroy();
     createSliderInstance = null;
@@ -72,7 +78,8 @@ const destroySliders = () => {
 };
 
 const checkViewport = () => {
-  initElemSlider();
+  initQualitiesSlider();
+  initCreateSlider();
   if (window.innerWidth > 960) {
     destroySliders();
   }
