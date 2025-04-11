@@ -28,12 +28,14 @@
 /* Policy */
 @import url('./sections/policy/policy.scss');
 
-/* About */
-@import url('./sections/about/about.scss');
-@import url('./sections/about/mission.scss');
-
 /* Footer */
 @import url('./sections/footer/footer.scss');
 
 /* Support */
 @import url('./sections/support/support.scss');
+@import url('./sections/support/partners.scss');
+
+/* About */
+@import url('./sections/about/about.scss');
+@import url('./sections/about/mission.scss');
+@import url('./sections/about/company.scss');

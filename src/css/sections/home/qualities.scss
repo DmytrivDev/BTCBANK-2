@@ -78,6 +78,23 @@
       margin-bottom: 0.5rem;
     }
   }
+  .qualities__head {
+    padding-top: 15rem;
+    max-width: inherit;
+    text-align: center;
+    padding-bottom: 3rem;
+    align-items: center;
+    align-content: center;
+    h2 {
+      font-size: 2rem;
+    }
+    img {
+      top: 3.25rem;
+      left: 50%;
+      width: 7.8rem;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

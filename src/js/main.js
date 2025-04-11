@@ -9,6 +9,8 @@ import './parts/tabs.js';
 import './parts/splidecust.js';
 import './parts/splide.js';
 import './parts/accordion.js';
+import './parts/forms.js';
+import './parts/modal.js';
 
 setTimeout(evt => {
   document.querySelector('.mobmenu').style.display = 'flex';
