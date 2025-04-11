@@ -1,0 +1,46 @@
+.support {
+    position: relative;
+
+    .bg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.support__body {
+    padding-top: 6.9rem;
+    padding-bottom: 8.25rem;
+    gap: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+    .btn-def {
+        margin-top: 1rem;
+    }
+
+    .txt2 {
+        max-width: 37rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .support__body {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .btn-def {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            width: auto;
+        }
+    }
+}

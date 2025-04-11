@@ -31,6 +31,27 @@
   }
 }
 
+.qualities__head {
+  max-width: 38rem;
+  gap: 1rem;
+  padding-bottom: 7.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  img {
+    top: -2.7rem;
+    right: -18rem;
+    width: 15.875rem;
+    transform: translateX(100%);
+    position: absolute;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .qualities {
     padding-top: 3rem;

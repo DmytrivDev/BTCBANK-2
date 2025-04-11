@@ -30,3 +30,6 @@
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
+
+/* Support */
+@import url('./sections/support/support.scss');
